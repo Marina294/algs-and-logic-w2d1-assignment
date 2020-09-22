@@ -5,17 +5,21 @@
 // Return a new array of sorted numbers.
 
 const sortNumsAscending = function(arr) {
+    // const sortNumsAscending = [...arr].sort();
+    // return arr;
+    sortNumsAscending.sort(function(a, b) {
+        return a - b;
+      });
+};
 
-}
-
-//sortNumsAscending([1, 2, 10, 50, 5]) 
+console.log(sortNumsAscending([1, 2, 10, 50, 5]));
 //➞ [1, 2, 5, 10, 50]
 
-//sortNumsAscending([80, 29, 4, -95, -24, 85]) 
+console.log(sortNumsAscending([80, 29, 4, -95, -24, 85])); 
 //➞ [-95, -24, 4, 29, 80, 85]
 
-//sortNumsAscending(null) 
+console.log(sortNumsAscending(null));
 //➞ []
 
-//sortNumsAscending([]) 
+console.log(sortNumsAscending([]));
 //➞ []

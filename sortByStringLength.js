@@ -5,16 +5,18 @@
 
 const sortByLength = function(arr) {
   // your code here
+  const sortByLength = arr.sort();
+  return arr;
 }
 
-// sortByLength(["a", "ccc", "dddd", "bb"]) 
+console.log(sortByLength(["a", "ccc", "dddd", "bb"])); 
 //➞ ["a", "bb", "ccc", "dddd"]
 
-//sortByLength(["apple", "pie", "shortcake"]) 
+console.log(sortByLength(["apple", "pie", "shortcake"]));
 //➞ ["pie", "apple", "shortcake"]
 
-//sortByLength(["may", "april", "september", "august"]) 
+console.log(sortByLength(["may", "april", "september", "august"]));
 //➞ ["may", "april", "august", "september"]
 
-//sortByLength([]) 
+console.log(sortByLength([]));
 //➞ []
